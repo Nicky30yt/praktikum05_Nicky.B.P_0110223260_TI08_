@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan 8.4: implementasi layout flexbox</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        background-color: pink;
+        float: left;
+        display: flex;
+        margin: 0px;
+        padding: 20px;  
+        height: 97vh;
+        width: 120px;
+    } 
+    header,footer{
+        display: flex;
+        background-color: blanchedalmond;
+        margin: 0px;
+        padding: 30px;
+    }
+    .flex-container2{
+        display: flex;
+        height: 77.3vh;
+    }
+    article{
+        background-color: white;
+        flex-grow: 3;
+        display: flex;
+        padding: 15px;
+    }
+    aside{
+        background-color: cyan;
+        display: flex;
+        padding: 15px;
+        flex-grow: 1;
+    }
+</style>
+<body>
+    <div class="flex-container">
+        <nav>Nav</nav>
+    </div>
+    <header>Header</header>
+    <div class="flex-container2">
+        <article>Article</article>
+        <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
